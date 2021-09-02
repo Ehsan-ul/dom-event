@@ -8,6 +8,10 @@ expression = /x(?=yz)/; //x will be matched if only x is before yz. ie: xyz ek s
 
 str = 'bxssoy';
 expression = /x(?!y)/; // y and x er majhe kichu ekta thakte hobe. (one or more than one)
+
+str = '+8801776199121'  // +88 diteo pari nao dite pari.
+expression = /^(\+88)?01[0-9]{9}$/  // ? sign er age () bracket er majhe ja thakbe seta optional
+
 regFun(str, expression);
 
 function regFun(str, expression) {
